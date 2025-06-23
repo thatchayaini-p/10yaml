@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day
+jobs:
+  trigger-child:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger manually using API
+        run: curl ...
