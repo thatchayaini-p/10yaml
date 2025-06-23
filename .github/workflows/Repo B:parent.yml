@@ -1,0 +1,5 @@
+jobs:
+  call-child:
+    uses: user/repo/.github/workflows/child.yml@main
+    with:
+      who: "From another repo"
