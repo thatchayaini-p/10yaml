@@ -1,0 +1,5 @@
+name: 'Run Child Logic'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Running child logic"
