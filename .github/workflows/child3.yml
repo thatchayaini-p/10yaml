@@ -1,4 +1,5 @@
 name: Child Workflow
+
 on:
   workflow_call:
     inputs:
@@ -10,5 +11,7 @@ jobs:
   run-child:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, ${{ inputs.name }}"
+      - name: Print input
+        run: echo "Hello from child: ${{ inputs.name }}"
+
 
