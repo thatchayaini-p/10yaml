@@ -1,2 +1,11 @@
-steps:
-  - uses: ./.github/actions/run-child
+name: Parent Workflow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger-child:
+    uses: ./.github/workflows/child3.yml
+    with:
+      name: "Thatchayaini"
+
