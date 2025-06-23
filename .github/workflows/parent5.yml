@@ -1,4 +1,5 @@
 name: Parent Workflow
+
 on:
   push:
     branches: [main]
@@ -8,4 +9,5 @@ jobs:
     uses: ./.github/workflows/child3.yml
     with:
       name: "Thatchayaini"
+
 
