@@ -1,0 +1,10 @@
+jobs:
+  create-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Tag
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "You"
+          git tag v1.0.$(date +%s)
+          git push origin --tags
