@@ -1,0 +1,10 @@
+on:
+  workflow_run:
+    workflows: ["Parent Workflow"]
+    types:
+      - completed
+jobs:
+  run-on-complete:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Parent completed!"
