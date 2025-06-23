@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+
+curl -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer ghp_xxxYourTokenHerexxx" \
+  -H "Content-Type: application/json" \
+  https://api.github.com/repos/thatchayaini/my-repo/actions/workflows/deploy.yml/dispatches \
+  -d '{"ref":"main"}'
+
+
