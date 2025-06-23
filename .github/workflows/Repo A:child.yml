@@ -1,0 +1,11 @@
+on:
+  workflow_call:
+    inputs:
+      who:
+        required: true
+        type: string
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, ${{ inputs.who }}"
