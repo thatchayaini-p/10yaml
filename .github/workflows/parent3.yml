@@ -1,0 +1,8 @@
+name: Parent Workflow
+on:
+  push:
+jobs:
+  do-something:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running parent..."
