@@ -1,0 +1,3 @@
+steps:
+  - name: Use custom action
+    uses: user/repo@v1
