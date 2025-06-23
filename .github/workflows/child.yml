@@ -1,0 +1,14 @@
+# .github/workflows/child.yml
+name: Child Workflow
+on:
+  workflow_call:
+    inputs:
+      message:
+        required: true
+        type: string
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.message }}"
